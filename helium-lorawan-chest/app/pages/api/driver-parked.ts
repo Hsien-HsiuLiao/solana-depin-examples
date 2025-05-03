@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 // Mock data for users
 const sensor_data = [
-  { id: 1, sensor: 'DS20L', distance: '20cm' },
+  { id: 1, sensor: 'DS20L', distance_in_cm: 20 },
 ];
 
 // API route handler
