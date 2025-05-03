@@ -12,7 +12,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       // Handle GET request to fetch all users
       return res.status(200).json(sensor_data);
 
-    case 'POST':
+ /*   case 'POST':
       // Handle POST request to create a new user
       const newUser = {
         id: users.length + 1,
@@ -21,7 +21,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       };
       users.push(newUser);
       return res.status(201).json(newUser);
-
+*/
     default:
       // Handle any other HTTP methods
       return res.status(405).json({ message: 'Method Not Allowed' });
