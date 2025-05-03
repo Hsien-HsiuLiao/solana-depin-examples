@@ -1,9 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 // Mock data for users
-const users = [
-  { id: 1, name: 'John Doe', email: 'john@example.com' },
-  { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+const sensor_data = [
+  { id: 1, sensor: 'DS20L', distance: '20cm' },
 ];
 
 // API route handler
@@ -11,7 +10,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   switch (req.method) {
     case 'GET':
       // Handle GET request to fetch all users
-      return res.status(200).json(users);
+      return res.status(200).json(sensor_data);
 
     case 'POST':
       // Handle POST request to create a new user
